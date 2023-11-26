@@ -1,0 +1,50 @@
+.auth {
+   position: absolute;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   background-color: rgba(0, 0, 0, 0.429);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   &__form {
+      border-radius: 5px;
+      display: inline-flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 30px;
+      background-color: antiquewhite;
+      align-items: end;
+
+      .input:focus ~ label,
+      input:valid ~ label {
+         background-color: antiquewhite;
+      }
+   }
+
+   &__btns {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+   }
+
+   &__another {
+      display: inline-flex;
+      gap: 2px;
+      align-items: center;
+      position: relative;
+      top: 2px;
+
+      span {
+         font-size: 14px;
+      }
+
+      i {
+         transform: rotateZ(180deg);
+         position: relative;
+         top: 2px;
+      }
+   }
+}

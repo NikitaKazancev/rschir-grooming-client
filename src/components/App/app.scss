@@ -1,0 +1,11 @@
+.app {
+   display: flex;
+   width: 100vw;
+   min-height: 100vh;
+   background-color: antiquewhite;
+   padding: 60px 150px;
+}
+
+main {
+   width: calc(100vw - 300px);
+}

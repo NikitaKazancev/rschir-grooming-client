@@ -1,0 +1,48 @@
+.btn {
+   border: 1px solid rgba(0, 0, 0, 0.1);
+   border-radius: 5px;
+   box-shadow: rgba(0, 0, 0, 0.02) 0 1px 3px 0;
+   color: rgba(0, 0, 0, 0.85);
+   cursor: pointer;
+   display: inline-flex;
+   justify-content: center;
+   padding: 6px 10px;
+   text-decoration: none;
+   transition: all 0.1s;
+   width: auto;
+
+   &.uppercase {
+      text-transform: uppercase;
+   }
+
+   &:hover {
+      transform: translateY(-1px);
+   }
+
+   &:hover,
+   &:focus {
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.1) 0 4px 12px;
+      color: rgba(0, 0, 0, 0.65);
+   }
+
+   &:active {
+      background-color: #f0f0f1;
+      border-color: rgba(0, 0, 0, 0.15);
+      box-shadow: rgba(0, 0, 0, 0.06) 0 2px 4px;
+      color: rgba(0, 0, 0, 0.65);
+      transform: translateY(0);
+   }
+
+   &.success {
+      background-color: rgb(187, 238, 195);
+   }
+
+   &.error {
+      background-color: rgb(238 187 187);
+   }
+
+   &.warning {
+      background-color: rgb(238, 222, 187);
+   }
+}
